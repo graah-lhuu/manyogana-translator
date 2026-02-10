@@ -10,3 +10,11 @@
 - 简单易用的GUI界面
 
 ## 使用方法
+bash
+pip install pyperclip
+python main.py
+
+## 技术栈
+- Python 3.8+
+- Tkinter (GUI)
+- pyperclip (剪贴板操作)
