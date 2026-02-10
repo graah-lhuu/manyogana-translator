@@ -250,7 +250,7 @@ class ManyoganaApp:
             self.output_text.insert("1.0", result)
             self.output_text.config(state="disabled")
             
-            self.status_label.config(text(f"変換完了: {len(text)}文字 → {len(result)}文字"))
+            self.status_label.config(text=f"変換完了: {len(text)}文字 → {len(result)}文字")
             
         except Exception as e:
             messagebox.showerror("エラー", f"変換中にエラーが発生しました:\n{str(e)}")
