@@ -28,3 +28,4 @@ python main.py
 - pyperclip (剪贴板操作)
 - HTML/CSS/JavaScript (前端版本)
 - GitHub Pages (部署)
+
