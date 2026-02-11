@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manyogana Translator</title>
+    <meta name="description" content="Modern Kana to Manyogana translator." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">万葉仮名</p>
+        <h1>Manyogana Translator</h1>
+        <p class="subtitle">
+          Convert modern Japanese kana into Manyogana with a fast, offline-ready
+          web tool.
+        </p>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Input</h2>
+          <div class="actions">
+            <button id="exampleBtn" class="ghost">Insert sample</button>
+            <button id="clearBtn" class="ghost">Clear</button>
+          </div>
+        </div>
+        <textarea
+          id="inputText"
+          placeholder="ひらがな・カタカナを入力してください"
+          rows="7"
+        ></textarea>
+        <div class="toolbar">
+          <label class="toggle">
+            <input id="liveToggle" type="checkbox" checked />
+            <span>Live convert</span>
+          </label>
+          <button id="convertBtn" class="primary">Convert</button>
+        </div>
+      </section>
+
+      <section class="panel output">
+        <div class="panel-header">
+          <h2>Output</h2>
+          <div class="actions">
+            <button id="copyBtn" class="ghost">Copy</button>
+            <button id="downloadBtn" class="ghost">Download .txt</button>
+          </div>
+        </div>
+        <pre id="outputText" aria-live="polite"></pre>
+        <p id="status" class="status">Ready.</p>
+      </section>
+
+      <section class="notes">
+        <div>
+          <h3>What is Manyogana?</h3>
+          <p>
+            Manyogana is an ancient phonetic use of kanji. This converter keeps
+            kanji and punctuation unchanged, and focuses on kana.
+          </p>
+        </div>
+        <div>
+          <h3>Supported</h3>
+          <ul>
+            <li>Hiragana and Katakana</li>
+            <li>Yoon (ゃゅょ) digraphs</li>
+            <li>Sokuon (っ)</li>
+            <li>Small vowels (ぁぃぅぇぉ)</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Built by TAO XIA</p>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
