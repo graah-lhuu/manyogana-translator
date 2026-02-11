@@ -18,7 +18,13 @@ python main.py
 ## 在线体验
 - 页面入口: [docs/index.html](docs/index.html)
 
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=graah-lhuu/manyogana-translator)](https://github.com/graah-lhuu/manyogana-translator/graphs/contributors)
+
 ## 技术栈
 - Python 3.8+
 - Tkinter (GUI)
 - pyperclip (剪贴板操作)
+- HTML/CSS/JavaScript (前端版本)
+- GitHub Pages (部署)
