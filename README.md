@@ -10,9 +10,13 @@
 - 简单易用的GUI界面
 
 ## 使用方法
-bash
-pip install pyperclip
+```bash
+pip install -r requirements.txt
 python main.py
+```
+
+## 在线体验
+- 页面入口: [docs/index.html](docs/index.html)
 
 ## 技术栈
 - Python 3.8+
